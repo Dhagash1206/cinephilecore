@@ -94,13 +94,18 @@ body {
   margin-bottom: 20px;
 }
 
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
 .movie-carousel {
   display: flex;
-  /* overflow: hidden; */
   white-space: nowrap;
   gap: 30px;
   padding: 0 5px; /* Adjust padding for spacing */
-  animation: scroll 12s linear infinite; /* animate the whole carousel track instead of each card */
+  animation: scroll 10s linear infinite; /* animate the whole carousel track instead of each card */
+  width: max-content;
 }
 .movie-card {
   /* display: inline-block; To keep all images in one line */
@@ -120,7 +125,6 @@ body {
   object-fit: cover; /* Ensures the image covers the entire container without distortion */
   transition: transform 0.5s ease;
 }
-
 .movie-card {
   cursor: pointer;
   position: relative;
